@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Liffs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @liffs.each do |liff| %>
+      <tr>
+        <td><%= liff.title %></td>
+        <td><%= liff.body %></td>
+        <td><%= link_to 'Show', liff %></td>
+        <td><%= link_to 'Edit', edit_liff_path(liff) %></td>
+        <td><%= link_to 'Destroy', liff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Liff', new_liff_path %>

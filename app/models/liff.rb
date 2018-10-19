@@ -1,0 +1,2 @@
+class Liff < ApplicationRecord
+end

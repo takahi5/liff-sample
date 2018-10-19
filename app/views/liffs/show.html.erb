@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @liff.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @liff.body %>
+</p>
+
+<%= link_to 'Edit', edit_liff_path(@liff) %> |
+<%= link_to 'Back', liffs_path %>
